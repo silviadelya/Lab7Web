@@ -106,7 +106,7 @@ Ketika diakses akan mucul tampilan error 404 file not found, itu artinya file/pa
 
 ### 2. Membuat Controller
 
-* Buat file baru dengan nama page.php pada direktori Controller kemudian isi kodenya seperti berikut.
+* Buat file baru dengan nama **page.php** pada direktori Controller kemudian isi kodenya seperti berikut.
 
 ```php
     <?php 
@@ -137,7 +137,7 @@ Ketika diakses akan mucul tampilan error 404 file not found, itu artinya file/pa
 
 * Secara default fitur *autoroute* pada Codeiginiter sudah aktif. Untuk mengubah status autoroute dapat mengubah nilai variabelnya. Untuk menonaktifkan ubah nilai **true** menjadi **false**.
 
-`$routes->setAutoRoute(true);`
+    `$routes->setAutoRoute(true);`
 
 * Tambahkan method baru pada **Controller Page** seperti berikut.
 
@@ -155,7 +155,7 @@ Ketika diakses akan mucul tampilan error 404 file not found, itu artinya file/pa
 
 ### 4. Membuat View
 
-* Buat file baru dengan nama about.php pada direktori view **(app/view/about.php)** kemudian isi kodenya seperti berikut.
+* Buat file baru dengan nama **about.php** pada direktori view **(app/view/about.php)** kemudian isi kodenya seperti berikut.
 
 ```html
     <!DOCTYPE html> 
@@ -178,8 +178,8 @@ Ketika diakses akan mucul tampilan error 404 file not found, itu artinya file/pa
     public function about() 
     { 
         return view('about', [ 
-            'title' => 'Halaman Abot', 
-            'content' => 'Ini adalah halaman abaut yang menjelaskan tentang isi halaman ini.' 
+            'title' => 'Halaman About', 
+            'content' => 'Ini adalah halaman about yang menjelaskan tentang isi halaman ini.' 
         ]); 
     }
 ```
@@ -193,11 +193,13 @@ Ketika diakses akan mucul tampilan error 404 file not found, itu artinya file/pa
 
 Pada dasarnya layout web dengan css dapat diimplamentasikan dengan mudah pada codeigniter. Yang perlu diketahui adalah, pada Codeigniter 4 file yang menyimpan asset css dan javascript terletak pada direktori **public**.
 
-* Buat file css pada direktori **public** dengan nama **style.css** (copy file dari praktikum **lab1**. Kita akan gunakan layout yang pernah dibuat pada praktikum 1).
+* Buat file css pada direktori **public** dengan nama **style.css**.
 
 ![Gambar 17](ss/17.png)
 
 * Kemudian buat folder template pada direktori view kemudian buat file **header.php** dan **footer.php**.
+
+![Gambar 17-1](ss/20.png)
 
 * File **app/view/template/header.php**
 
